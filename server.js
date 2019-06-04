@@ -6,9 +6,9 @@ var middleware = require('./middleware.js');
 //Middleware requires to be written before app.get
 app.use(middleware.logger);
 
-// app.get('/', function(req, res){
-// 	res.send('Hello express!');
-// });
+app.get('/', function(req, res){
+	res.send('Hello express!');
+});
 
 app.get('/about', function(req, res){
 	res.send('Dell Emc Server for Office 365!');

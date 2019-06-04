@@ -7,7 +7,7 @@ var middleware = require('./middleware.js');
 app.use(middleware.logger);
 
 app.get('/', function(req, res){
-	res.send('Hello express!');
+	res.send('Hello from EMC server!');
 });
 
 app.get('/about', function(req, res){

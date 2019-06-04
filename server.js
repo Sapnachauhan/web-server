@@ -1,5 +1,5 @@
 var express =require('express');
-var PORT =3000;
+var PORT = process.env.PORT || 3000;
 var app =express(); //creating express app using a  function
 var middleware = require('./middleware.js');
 //app.use(middleware.requireAuthentication);
